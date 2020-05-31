@@ -60,7 +60,6 @@ def get_info(ticker, website, driver):
         except (IndexError, AttributeError):
             logging.info(f'Stock {ticker} has no dividend history.')
             return ['NA', 'NA', 'NA', 'NA', 'NA', 'NA', ticker]
-    print(stock_info)
     return stock_info
 
 
